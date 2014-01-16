@@ -1,0 +1,7 @@
+ Prefix Verb URI Pattern        Controller#Action
+   root GET /                  static_pages#home
+   help GET /help(.:format)    static_pages#help
+  about GET /about(.:format)   static_pages#about
+contact GET /contact(.:format) static_pages#contact
+sign_in GET /sign_in(.:format) devise/sessions#new
+sign_up GET /sign_up(.:format) devise/registrations#new
