@@ -1,0 +1,4 @@
+==  CreateWorkouts: migrating =================================================
+-- create_table(:workouts)
+   -> 0.0069s
+-- add_reference(:user, {:index=>true})

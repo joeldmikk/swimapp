@@ -1,9 +1,9 @@
 class Counter < ActiveRecord::Base
   
   belongs_to :user
-  attr_accessor @miles
-  attr_accessor @workouts
-  attr_accessor @goal
+  attr_accessor :miles
+  attr_accessor :workouts
+  attr_accessor :goal
 
   @workouts = Array.new
 

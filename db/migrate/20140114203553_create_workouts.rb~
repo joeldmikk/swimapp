@@ -1,6 +1,6 @@
 class CreateWorkouts < ActiveRecord::Migration
   def change
-    add_reference :users, index: true
+    add_reference :user, index: true
     create_table :workouts do |t|
       t.integer	:distance
 
