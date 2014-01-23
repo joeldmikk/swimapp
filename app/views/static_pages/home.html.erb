@@ -6,5 +6,9 @@
     Good for swimming
   </h2>
 
+  <% if user_signed_in? %>
+    <%= Totaler.get_total(current_user)  %>
+  <% end %>
+
   <%= link_to "Sign up and swim!", new_user_registration_path, class: "btn btn-large btn-primary" %>
 </div>
