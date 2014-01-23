@@ -6,20 +6,11 @@ class Workout < ActiveRecord::Base
     MilesConverter.new(units).convert(distance)
   end
 
-  
-
-class Totaler
-  def get_total(user)
-   total = 0
-    user.workouts.each { |x| @@total += x.distance_as_miles }
-    return total
-  end
-end
-
 end
 
 class MilesConverter
   attr_reader :units
+  attr_reader :distance
   def initialize(units = 'yards')
     @units = units
   end
