@@ -29,6 +29,7 @@ class WorkoutsController < ApplicationController
 #this is what I had before:
 #w = Workout.new(distance: params[:distance], units: params[:units])
     @workout = Workout.new(workout_params)
+    @workout.user_id = current_user.id
 
     respond_to do |format|
       if @workout.save

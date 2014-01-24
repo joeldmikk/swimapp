@@ -10,7 +10,6 @@ end
 
 class MilesConverter
   attr_reader :units
-  attr_reader :distance
   def initialize(units = 'yards')
     @units = units
   end
