@@ -9,8 +9,6 @@
   <div style="margin:10px;">
   <% if user_signed_in? %>
     <%= Totaler.new().get_total(current_user) %>
-    <%= Totaler.new().count_em(current_user) %>
-    <%= Totaler.new().tester %>
     <%= link_to "New Workout", new_workout_path, class: "btn btn-large btn-primary" %>
     <%= link_to "All Workouts", workouts_path %>
   <% end %>

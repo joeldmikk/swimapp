@@ -27,6 +27,9 @@ gem 'turbolinks'
 # Devise - for logins / sessions
 gem 'devise'
 
+# Bootstrap for lookin' good
+gem 'bootstrap-sass'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
