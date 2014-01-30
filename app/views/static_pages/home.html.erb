@@ -1,20 +1,19 @@
 <% provide(:title, 'home') %>
-<div>
+<div class="container">
   <h1>Welcome to Swim App</h1>
 
   <h2>
     Good for swimming
   </h2>
 
-  <div style="margin:10px;">
+  <div>
   <% if user_signed_in? %>
-    <span><%= Totaler.new().get_total(current_user) %> / <%= current_user.goal %></span>
-    <%= link_to "New Workout", new_workout_path, class: "btn btn-large btn-primary" %>
-    <%= link_to "All Workouts", workouts_path, class: "btn btn-large btn-info" %>
+    <span class="goal_progress">Progress towards goal: <%= Totaler.new().get_total(@user).round(2) %> / <%= @user.goal %> (<%=(Totaler.new().get_total(@user)*100/@user.goal).round(2) %>%)</span><br />
+    <%= link_to "New Workout", new_workout_path, class: "btn btn-default" %>
+    <%= link_to "All Workouts", workouts_path, class: "btn btn-default" %>
   <% else %>
     <%= link_to "Sign up and swim!", new_user_registration_path, class: "btn btn-large btn-primary" %>
   <% end %>
   </div>
 
-  <%#= link_to "Sign up and swim!", new_user_registration_path, class: "btn btn-large btn-primary" %>
 </div>

@@ -4,4 +4,6 @@ class Totaler
 		user.workouts.each { |x| total += x.distance_as_miles}
 		return total
 	end
+
+	
 end

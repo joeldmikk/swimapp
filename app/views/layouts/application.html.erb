@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swim App | <%= yield(:title) %></title>
-    <%= stylesheet_link_tag "application", media: "all",
+    <%= stylesheet_link_tag "application", "icons", "normalize", "style5", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
     <%= csrf_meta_tags %>
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <script src="js/modernizr.custom.js"></script>
+
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <%= render 'layouts/shim' %>
   </head>
   <body>
-    <%= render 'layouts/header' %>
+    <%#= render 'layouts/menu' %>
+    <%#= render 'layouts/header' %>
     <div class="container">
+      <%= render 'layouts/menu' %>
       <%= yield %>
-      <%= render 'layouts/footer' %>
+      <%#= render 'layouts/footer' %>
     </div>
   </body>
 </html>
