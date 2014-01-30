@@ -1,0 +1,36 @@
+                  Prefix Verb   URI Pattern                      Controller#Action
+            not_workouts GET    /not_workouts(.:format)          not_workouts#index
+                         POST   /not_workouts(.:format)          not_workouts#create
+         new_not_workout GET    /not_workouts/new(.:format)      not_workouts#new
+        edit_not_workout GET    /not_workouts/:id/edit(.:format) not_workouts#edit
+             not_workout GET    /not_workouts/:id(.:format)      not_workouts#show
+                         PATCH  /not_workouts/:id(.:format)      not_workouts#update
+                         PUT    /not_workouts/:id(.:format)      not_workouts#update
+                         DELETE /not_workouts/:id(.:format)      not_workouts#destroy
+                    root GET    /                                static_pages#home
+                    help GET    /help(.:format)                  static_pages#help
+                   about GET    /about(.:format)                 static_pages#about
+                 contact GET    /contact(.:format)               static_pages#contact
+                workouts GET    /workouts(.:format)              workouts#index
+                         POST   /workouts(.:format)              workouts#create
+             new_workout GET    /workouts/new(.:format)          workouts#new
+            edit_workout GET    /workouts/:id/edit(.:format)     workouts#edit
+                 workout GET    /workouts/:id(.:format)          workouts#show
+                         PATCH  /workouts/:id(.:format)          workouts#update
+                         PUT    /workouts/:id(.:format)          workouts#update
+                         DELETE /workouts/:id(.:format)          workouts#destroy
+        new_user_session GET    /users/sign_in(.:format)         devise/sessions#new
+            user_session POST   /users/sign_in(.:format)         devise/sessions#create
+    destroy_user_session GET    /users/sign_out(.:format)        devise/sessions#destroy
+           user_password POST   /users/password(.:format)        devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)    devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format)   devise/passwords#edit
+                         PATCH  /users/password(.:format)        devise/passwords#update
+                         PUT    /users/password(.:format)        devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)          devise/registrations#cancel
+       user_registration POST   /users(.:format)                 devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)         devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)            devise/registrations#edit
+                         PATCH  /users(.:format)                 devise/registrations#update
+                         PUT    /users(.:format)                 devise/registrations#update
+                         DELETE /users(.:format)                 devise/registrations#destroy

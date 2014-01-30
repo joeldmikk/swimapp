@@ -1,0 +1,28 @@
+<%= form_for(@workout) do |f| %>
+  <% if @workout.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@workout.errors.count, "error") %> prohibited this workout from being saved:</h2>
+
+      <ul>
+      <% @workout.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :distance %><br>
+    <%= f.number_field :distance %>
+  </div>
+  <div class="field">
+    <%= f.label :units %><br>
+    <%= f.radio_button :units, 'yards', :checked => true %>
+    <%= label :units_yards, 'Yards' %><br />
+    <%= f.radio_button :units, 'meters' %>
+    <%= label :units_meters, 'Meters' %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

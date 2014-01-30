@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @workout.distance %>
+</p>
+
+<p>
+  <strong>Units:</strong>
+  <%= @workout.units %>
+</p>
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> |
+<%= link_to 'Back', workouts_path %>
