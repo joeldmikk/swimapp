@@ -33,7 +33,7 @@ class WorkoutsController < ApplicationController
 
     respond_to do |format|
       if @workout.save
-        format.html { redirect_to @workout, notice: 'Not workout was successfully created.' }
+        format.html { redirect_to @workout, notice: 'Workout was successfully created.' }
         format.json { render action: 'show', status: :created, location: @workout }
       else
         format.html { render action: 'new' }
@@ -47,7 +47,7 @@ class WorkoutsController < ApplicationController
   def update
     respond_to do |format|
       if @workout.update(workout_params)
-        format.html { redirect_to @workout, notice: 'Not workout was successfully updated.' }
+        format.html { redirect_to @workout, notice: 'Workout was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

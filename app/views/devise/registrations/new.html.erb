@@ -13,8 +13,8 @@
   <%= f.password_field :password_confirmation %></div>
 
   <div><%= f.label :goal %><br />
-  <%= f.text_field :goal %></div>
-  <p>Don't worry, you can change your goal later %>
+  <%= f.number_field :goal, :value => 100 %></div>
+  <p>Don't worry, you can change your goal later </p>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>

@@ -8,11 +8,13 @@
 
   <div style="margin:10px;">
   <% if user_signed_in? %>
-    <%= Totaler.new().get_total(current_user) %>
+    <span><%= Totaler.new().get_total(current_user) %> / <%= current_user.goal %></span>
     <%= link_to "New Workout", new_workout_path, class: "btn btn-large btn-primary" %>
-    <%= link_to "All Workouts", workouts_path %>
+    <%= link_to "All Workouts", workouts_path, class: "btn btn-large btn-info" %>
+  <% else %>
+    <%= link_to "Sign up and swim!", new_user_registration_path, class: "btn btn-large btn-primary" %>
   <% end %>
   </div>
 
-  <%= link_to "Sign up and swim!", new_user_registration_path, class: "btn btn-large btn-primary" %>
+  <%#= link_to "Sign up and swim!", new_user_registration_path, class: "btn btn-large btn-primary" %>
 </div>

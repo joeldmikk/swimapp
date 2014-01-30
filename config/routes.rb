@@ -10,6 +10,9 @@ Swimapp::Application.routes.draw do
   match '/help',	to: 'static_pages#help',	via: 'get'
   match '/about',	to: 'static_pages#about',	via: 'get'
   match '/contact',	to: 'static_pages#contact',	via: 'get'
+
+  
+
   resources :workouts
   #get "/sign_in" => "devise/sessions#new"
   #get "/sign_up" => "devise/registrations#new"
