@@ -1,11 +1,13 @@
 <%= javascript_include_tag "application", "borderMenu", "classie", "modernizr.custom", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "application", "normalize", "style5", media: "all",
+                                           "data-turbolinks-track" => true %>
 <nav id="bt-menu" class="bt-menu">
 <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 	<ul>
 		<li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
-        <li><%= link_to "Shallow end", '#' %></li>
-        <li><%= link_to "Deep end", '#' %></li>
+        <li><%= link_to "Shallow end", shallow_end_path %></li>
+        <li><%= link_to "Deep end", deep_end_path %></li>
           
         <% if user_signed_in? %>
           <li><%= link_to "Sign out", destroy_user_session_path %></li>
@@ -16,10 +18,10 @@
 
 	
 	</ul>
-	<ul>
+	<!--ul>
 		<li><%= link_to "About",  about_path %></li>
     	<li><%= link_to "Contact", contact_path %></li>
     	<li><a href="http://www.joelmikkelsen.com" target="_blank">Blog</a></li>
 		<li><a href="https://github.com/joeldmikk">Github</a></li>
-	</ul>
+	</ul-->
 </nav>

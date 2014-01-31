@@ -2,7 +2,13 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 
+html {
+	color: #fff;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
 body {
+	color: #fff;
 	font-family: 'Lato', Arial, sans-serif;
 }
 
@@ -44,7 +50,9 @@ body {
 .btn:focus {
 	color: #333333;
 	text-decoration: none;
-	background-color: red;
+	/*background-color: #535899;*/
+	/*background-color: #dcf0ff;*/
+	background-color: #e5f4ff;
 }
 .btn:active,
 .btn:active {
@@ -57,4 +65,9 @@ body {
 	color: #333333;
 	background-color: #ffffff;
 	border-color: #cccccc;
+}
+
+meter {
+	width: 500px;
+	margin: 20px 0 20px;
 }
