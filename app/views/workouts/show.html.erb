@@ -2,20 +2,20 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Distance:</strong>
-  <%= @workout.distance %>
-</p>
+<span>
+  <h1>Distance:</h1>
+  <h2><%= @workout.distance %></h2>
+</span>
 
-<p>
-  <strong>Units:</strong>
-  <%= @workout.units %>
-</p>
+<span>
+  <h1>Units:</h1>
+  <h2><%= @workout.units %></h2>
+</span>
 
-<p>
-  <strong>Date:</strong>
-  <%= @workout.created_at.strftime("%d %b. %Y") %>
-</p>
+<span>
+  <h1>Date:</h1>
+  <h2><%= @workout.created_at.strftime("%d %b. %Y") %></h2>
+</span>
 
 <%= link_to 'Edit', edit_workout_path(@workout), class: "btn btn-default" %> |
 <%= link_to 'Back', workouts_path, class: "btn btn-default" %> | 

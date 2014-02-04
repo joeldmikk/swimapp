@@ -2,7 +2,7 @@
 
 <h1>Listing workouts</h1>
 
-<table>
+<table cellspacing="10" cellpadding="5">
   <thead>
     <tr>
       <th>Distance</th>
@@ -20,7 +20,7 @@
       <tr>
         <td><%= workout.distance %></td>
         <td><%= workout.units %></td>
-        <td><%= workout.distance_as_miles %></td>
+        <td><%= workout.distance_as_miles.round(2) %></td>
         <td><%= workout.created_at.strftime("%d %b. %Y") %></td>
         <td><%= link_to 'Show', workout %></td>
         <td><%= link_to 'Edit', edit_workout_path(workout) %></td>

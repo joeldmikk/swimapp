@@ -14,9 +14,17 @@ body {
 
 .goal_progress{
 	font-size: 2em;
-	color: #fff;
-	padding: 0 10 0 10;
-	font-family: 'Lato';
+}
+
+.text_bg{
+	background-color: #12537f;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.2em;
+	p{
+		font-size: 1.0em;
+	}
 }
 
 /* Button copied from Bootstrap */
@@ -65,9 +73,26 @@ body {
 	color: #333333;
 	background-color: #ffffff;
 	border-color: #cccccc;
+	margin: 10px 0 10px 0;
 }
+
+a:link {
+	color: #cccccc;
+}
+
+a:hover{
+	color: #ffffff;
+	background-color: #333333;
+	text-decoration: none;
+}
+
+
+
 
 meter {
 	width: 500px;
 	margin: 20px 0 20px;
 }
+
+
+/******* METER STUFF **********/
