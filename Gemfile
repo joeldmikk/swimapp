@@ -11,6 +11,8 @@ end
 group :production, :staging do
 	#Postgresql for production
 	gem 'pg'
+	#apparently needed for Heroku
+	gem 'rails_12factor'
 end
 
 
@@ -57,3 +59,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+ruby '2.0.0'
