@@ -1,0 +1,69 @@
+Running `rake db:setup` attached to terminal... up, run.9516
+FATAL:  permission denied for database "postgres"
+DETAIL:  User does not have CONNECT privilege.
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `initialize'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `new'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_handling.rb:53:in `connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/tasks/postgresql_database_tasks.rb:8:in `connection'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/tasks/postgresql_database_tasks.rb:17:in `create'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/tasks/database_tasks.rb:73:in `create'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/tasks/database_tasks.rb:93:in `create_database_url'
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/databases.rake:18:in `block (2 levels) in <top (required)>'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:236:in `call'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:236:in `block in execute'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:231:in `each'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:231:in `execute'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:175:in `block in invoke_with_call_chain'
+/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:168:in `invoke_with_call_chain'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:197:in `block in invoke_prerequisites'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:195:in `each'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:195:in `invoke_prerequisites'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:174:in `block in invoke_with_call_chain'
+/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:168:in `invoke_with_call_chain'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:197:in `block in invoke_prerequisites'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:195:in `each'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:195:in `invoke_prerequisites'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:174:in `block in invoke_with_call_chain'
+/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:168:in `invoke_with_call_chain'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/task.rb:161:in `invoke'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:149:in `invoke_task'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:106:in `block (2 levels) in top_level'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:106:in `each'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:106:in `block in top_level'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:115:in `run_with_threads'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:100:in `top_level'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:78:in `block in run'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:165:in `standard_exception_handling'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/lib/rake/application.rb:75:in `run'
+/app/vendor/bundle/ruby/2.0.0/gems/rake-10.1.1/bin/rake:33:in `<top (required)>'
+/app/vendor/bundle/ruby/2.0.0/bin/rake:23:in `load'
+/app/vendor/bundle/ruby/2.0.0/bin/rake:23:in `<main>'
+Couldn't create database for {"adapter"=>"postgresql", "username"=>"eisrkusyejthwa", "password"=>"6ik2Jh9kln4D9PKlkvg9Rhsq8F", "port"=>5432, "database"=>"d7cnjfour30c5u", "host"=>"ec2-54-225-103-9.compute-1.amazonaws.com"}
+-- create_table("users", {:force=>true})
+   -> 0.2062s
+-- add_index("users", ["email"], {:name=>"index_users_on_email", :unique=>true})
+   -> 0.0225s
+-- add_index("users", ["reset_password_token"], {:name=>"index_users_on_reset_password_token", :unique=>true})
+   -> 0.0278s
+-- create_table("workouts", {:force=>true})
+   -> 0.0248s
+-- initialize_schema_migrations_table()
+   -> 0.0033s

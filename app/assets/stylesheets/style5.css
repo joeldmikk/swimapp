@@ -60,6 +60,10 @@ body  {
 	cursor: pointer;
 }
 
+/*.bt-menu-trigger:hover {
+	background-color: #24a6ff;
+}*/
+
 .bt-menu-trigger span {
 	position: absolute;
 	top: 50%;
@@ -241,3 +245,10 @@ body  {
 .bt-menu ul li a:focus:before {
 	color: #1abc9c;
 }
+
+/***stuff I added ****/
+/*a:hover{
+	color: #ffffff;
+	background-color: #24a6ff;
+	text-decoration: none;
+}*/
