@@ -10,6 +10,4 @@ class GoalsController < Devise::RegistrationsController
 	def edit
 	end
 
-	def
-
 end
