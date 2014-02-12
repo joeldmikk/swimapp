@@ -9,7 +9,7 @@
   <div class="progress">
   <% if user_signed_in? %>
     <% @total = Totaler.new().get_total(@user) %>
-    <span class="goal_progress">Progress towards goal: <%= @total.round(2) %> / <%= @goal %> (<%=(@total*100/@goal).round(2) %>%)</span><br />
+    <span class="goal_progress">Progress towards goal: <%= @total.round(2) %> / <%= @user.goal %> (<%=(@total*100/@user.goal).round(2) %>%)</span><br />
     <meter min="0" max="<%=@goal%>" value="<%= @total %>"></meter><br />
     <%= link_to "New Workout", new_workout_path, class: "btn btn-default" %>
     <%= link_to "All Workouts", workouts_path, class: "btn btn-default" %>

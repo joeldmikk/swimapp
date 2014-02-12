@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
   
   def home
   	@user = current_user
-    @goal = @user.goal
+    #@goal = @user.goal
   	#current_user.goal != nil ? @goal = current_user.goal : @goal = 100
   end
 
