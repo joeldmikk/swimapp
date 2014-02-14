@@ -1,6 +1,6 @@
-<% provide(:title, 'home') %>
+<% provide(:title, 'Home') %>
 <div class="container">
-  <h1>Welcome to the Century Swim Challenge!</h1>
+  <h1>Welcome to the 100 Mile Swim Challenge!</h1>
 
   <h2>
     Take the challenge to swim 100 miles in a year.
@@ -10,11 +10,12 @@
   <% if user_signed_in? %>
     <% @total = Totaler.new().get_total(@user) %>
     <span class="goal_progress">Progress towards goal: <%= @total.round(2) %> / <%= @user.goal %> (<%=(@total*100/@user.goal).round(2) %>%)</span><br />
-    <meter min="0" max="<%=@goal%>" value="<%= @total %>"></meter><br />
+    <meter min="0" max="<%=@user.goal%>" value="<%= @total %>"></meter><br />
     <%= link_to "New Workout", new_workout_path, class: "btn btn-default" %>
     <%= link_to "All Workouts", workouts_path, class: "btn btn-default" %>
   <% else %>
     <%= link_to "Sign up and swim!", new_user_registration_path, class: "btn btn-default" %>
+    <%= link_to "Sign in", user_sessions_path, class: "btn btn-default" %>
   <% end %>
   </div>
 
