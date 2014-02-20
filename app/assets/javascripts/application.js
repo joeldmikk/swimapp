@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// Load all Modernizr javascripts
+//= require modernizr
