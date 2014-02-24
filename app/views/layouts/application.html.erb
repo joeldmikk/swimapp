@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swim Challenge | <%= yield(:title) %></title>
-    <%= favicon_link_tag 'favicon.ico' %>
-    <%#= stylesheet_link_tag "application", media: "all",
-                                           "data-turbolinks-track" => true %>
-    <%#= javascript_include_tag "application", "data-turbolinks-track" => true %>
-
-    <%= javascript_include_tag "application", "borderMenu", "classie", :modernizr, "data-turbolinks-track" => true %>
+    
+    <%= javascript_include_tag "application", "borderMenu", "classie", "modernizr", "data-turbolinks-track" => true %>
     <%= stylesheet_link_tag "application", "normalize", "style5", media: "all",
                                            "data-turbolinks-track" => true %>
 
+    <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
 
     <!--script src="vendor/modernizr.js"></script-->

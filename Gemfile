@@ -26,7 +26,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 #modernizr for prettiness
-gem "modernizr-rails", "~> 2.7.1"
+#gem "modernizr-rails", "~> 2.7.1"
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
