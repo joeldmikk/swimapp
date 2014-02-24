@@ -1,0 +1,143 @@
+=> Booting WEBrick
+=> Rails 4.0.2 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-20 13:52:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mWorkout Load (1.6ms)[0m  [1mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered static_pages/home.html.erb within layouts/application (186.1ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_menu.html.erb (11.3ms)
+Completed 200 OK in 2468ms (Views: 1974.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/borderMenu.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/style5.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:22 -0500
+
+
+Started GET "/assets/borderMenu.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:25 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:25 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-20 13:52:42 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (188.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mWorkout Load (0.3ms)[0m  [1mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered static_pages/home.html.erb within layouts/application (34.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_menu.html.erb (5.0ms)
+Completed 200 OK in 511ms (Views: 282.9ms | ActiveRecord: 189.0ms)
+
+
+Started GET "/assets/borderMenu.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:43 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:43 -0500
+
+
+Started GET "/shallow_end" for 127.0.0.1 at 2014-02-20 13:52:51 -0500
+Processing by StaticPagesController#shallow_end as HTML
+  Rendered static_pages/shallow_end.html.erb within layouts/application (34.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (42.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_menu.html.erb (50.7ms)
+Completed 200 OK in 183ms (Views: 138.8ms | ActiveRecord: 42.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/style5.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/borderMenu.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:53 -0500
+
+
+Started GET "/assets/borderMenu.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:55 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-02-20 13:52:55 -0500
+Exiting
