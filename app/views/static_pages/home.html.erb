@@ -7,10 +7,10 @@
   <h2>
     Take the challenge to swim 100 miles in a year.
   </h2>
-  <hr>
-
+  
   <div class="progress">
   <% if user_signed_in? %>
+    <hr>
     <% @total = Totaler.new().get_total(@user) %>
     <span class="goal_progress">Progress towards goal: <%= @total.round(2) %> / <%= @user.goal %> (<%=(@total*100/@user.goal).round(2) %>%)</span><br />
     <meter min="0" max="<%=@user.goal%>" value="<%= @total %>"></meter><br />
