@@ -1,10 +1,13 @@
 <% provide(:title, 'Home') %>
 <div class="container">
+  <%= image_tag("swim_icon_white.png", size: "50") %>
+  
   <h1>Welcome to the 100 Mile Swim Challenge!</h1>
 
   <h2>
     Take the challenge to swim 100 miles in a year.
   </h2>
+  <hr>
 
   <div class="progress">
   <% if user_signed_in? %>
