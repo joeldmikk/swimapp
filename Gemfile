@@ -35,6 +35,9 @@ gem "modernizr-rails", "~> 2.7.1"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Datatables for the tables
+gem 'jquery-datatables-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
